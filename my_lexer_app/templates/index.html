@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador Léxico con Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylers.css') }}">
+    <script src="{{ url_for('static', filename='js/scripts.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Analizador Léxico</h1>
+    </header>
+    <main>
+        <section class="input-section">
+            <textarea id="codeInput" rows="10" placeholder="Escribe o carga tu código aquí..."></textarea>
+        </section>
+        <section class="buttons-section">
+            <button id="analyzeButton">Analizar</button>
+            <button id="clearButton">Borrar Todo</button>
+            <button id="loadFileButton">Cargar Archivo</button>
+        </section>
+        <section class="table-section">
+            <table id="tokensTable">
+                <thead>
+                    <tr>
+                        <th>Línea</th>
+                        <th>Token</th>
+                        <th>PR</th>
+                        <th>ID</th>
+                        <th>PI</th>
+                        <th>PD</th>
+                        <th>LI</th>
+                        <th>LD</th>
+                        <th>PC</th>
+                        <th>VAR</th>
+                        <th>SUM</th>
+                        <th>CO</th>
+                        <th>ER</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
